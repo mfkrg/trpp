@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/drawable/blackkruglie.xml" value="0.2985" />
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/drawable/cycle.xml" value="0.2985" />
+        <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/drawable/ic_home_bold.xml" value="0.297" />
+        <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/drawable/ic_image_2.xml" value="0.297" />
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/drawable/kruglye_ugli.xml" value="0.2985" />
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/drawable/purplekruglie.xml" value="0.2985" />
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/drawable/white_krug.xml" value="0.2985" />
@@ -13,6 +15,7 @@
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/layout/activity_orders.xml" value="0.33" />
         <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Zahar/Desktop/TRPP_project/trpp/app/src/main/res/layout/goods_item.xml" value="0.35643115942028986" />
       </map>
     </option>
   </component>
