@@ -22,6 +22,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener{
                 break;
             case R.id.toOrdersFromProfileButton:
                 Intent intentToOrdersFromProfile = new Intent(this, Orders.class);
+                startActivity(intentToOrdersFromProfile);
                 break;
             default:
                 break;
