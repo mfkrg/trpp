@@ -42,6 +42,7 @@
                     android:id="@+id/toOrdersFromProfileButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
                     android:background="@color/purplebottombutton"
                     android:contentDescription="corzina_catalog_page"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -51,5 +52,53 @@
                     tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/blackbackgroud"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/white_krug" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="49dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="@+id/imageButton"
+            app:srcCompat="@drawable/ic__elik" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="@string/hello"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-240dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="@string/my_orders"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

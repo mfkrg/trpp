@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentToProfileFromCatalog = new Intent(this, Profile.class);
                 startActivity(intentToProfileFromCatalog);
                 break;
+            case R.id.toOrdersFromCatalogButton:
+                Intent intentToOrdersFromCatalog = new Intent(this, Orders.class);
+                startActivity(intentToOrdersFromCatalog);
+                break;
             default:
                 break;
         }
@@ -33,5 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         toProfileFromCatalogButton = (ImageButton) findViewById(R.id.toProfileFromCatalogButton);
         toProfileFromCatalogButton.setOnClickListener(this);
+        toOrdersFromCatalogButton = (ImageButton) findViewById(R.id.toOrdersFromCatalogButton);
+        toOrdersFromCatalogButton.setOnClickListener(this);
     }
 }

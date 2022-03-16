@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trpp">
         <activity
+            android:name=".Congrats"
+            android:exported="false" />
+        <activity
+            android:name=".Orders"
+            android:exported="false" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

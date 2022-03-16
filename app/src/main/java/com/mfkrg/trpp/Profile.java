@@ -20,6 +20,9 @@ public class Profile extends AppCompatActivity implements View.OnClickListener{
                 Intent intentToCatalogFromProfile = new Intent(this, MainActivity.class);
                 startActivity(intentToCatalogFromProfile);
                 break;
+            case R.id.toOrdersFromProfileButton:
+                Intent intentToOrdersFromProfile = new Intent(this, Orders.class);
+                break;
             default:
                 break;
         }
@@ -31,5 +34,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_profile);
         toCatalogButtonFromProfile = (ImageButton) findViewById(R.id.toCatalogButtonFromProfile);
         toCatalogButtonFromProfile.setOnClickListener(this);
+        toOrdersFromProfileButton = (ImageButton) findViewById(R.id.toOrdersFromProfileButton);
+        toOrdersFromProfileButton.setOnClickListener(this);
     }
 }
