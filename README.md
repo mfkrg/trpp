@@ -22,7 +22,7 @@ git clone https://github.com/mfkrg/trpp.git
 ```
 
 <p align="center">
-<img src="https://pasteboard.co/r5xNkWmXlxDT.png">
+<img href="https://pasteboard.co/r5xNkWmXlxDT.png">
 
 
 ## Links
