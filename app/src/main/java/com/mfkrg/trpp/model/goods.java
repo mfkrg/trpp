@@ -3,13 +3,13 @@ package com.mfkrg.trpp.model;
 public class goods {
 
     int id;
-    String img, title, cost, color;
+    String name, cost, img, color;
 
-    public goods(int id, String img, String title, String cost, String color) {
+    public goods(int id, String name, String cost, String img, String color) {
         this.id = id;
-        this.img = img;
-        this.title = title;
+        this.name = name;
         this.cost = cost;
+        this.img = img;
         this.color = color;
     }
 
@@ -21,20 +21,12 @@ public class goods {
         this.id = id;
     }
 
-    public String getImg() {
-        return img;
+    public String getName() {
+        return name;
     }
 
-    public void setImg(String img) {
-        this.img = img;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCost() {
@@ -43,6 +35,14 @@ public class goods {
 
     public void setCost(String cost) {
         this.cost = cost;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public String getColor() {
