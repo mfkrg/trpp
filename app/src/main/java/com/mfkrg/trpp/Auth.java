@@ -173,7 +173,7 @@ public class Auth extends AppCompatActivity{
                         users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Snackbar.make(root, "registrated!", Snackbar.LENGTH_SHORT).show();
+                                Snackbar.make(findViewById(android.R.id.content), "registred!", Snackbar.LENGTH_SHORT).show();
                             }
                         });
                     }

@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/gilroy_semibold"
-            android:text="@string/hello"
+            android:text="Hello, customer!"
             android:textColor="@color/white"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"

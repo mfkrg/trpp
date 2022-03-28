@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import com.mfkrg.trpp.Models.User;
 
 public class Profile extends AppCompatActivity implements View.OnClickListener{
 
@@ -37,5 +40,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener{
         toCatalogButtonFromProfile.setOnClickListener(this);
         toOrdersFromProfileButton = (ImageButton) findViewById(R.id.toOrdersFromProfileButton);
         toOrdersFromProfileButton.setOnClickListener(this);
+
     }
+
 }
