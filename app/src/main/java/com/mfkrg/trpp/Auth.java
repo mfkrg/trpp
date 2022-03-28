@@ -91,11 +91,11 @@ public class Auth extends AppCompatActivity{
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 if(TextUtils.isEmpty(email.getText().toString())){
-                    Snackbar.make(root, "The email field is empty!", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(findViewById(android.R.id.content), "The email field is empty!", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 if(password.getText().toString().length() < 5){
-                    Snackbar.make(root, "Password must be at least 5 characters long!", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(findViewById(android.R.id.content), "Wrong password!", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 auth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
@@ -145,20 +145,19 @@ public class Auth extends AppCompatActivity{
             @Override
             public void onClick(DialogInterface dialogInterface, int which) {
                 if(TextUtils.isEmpty(email.getText().toString())){
-                    Snackbar.make(root, "The email field is empty!", Snackbar.LENGTH_SHORT).show();
-                    //Snackbar.make(findViewById(android.R.id.content), "The email field is empty!", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(findViewById(android.R.id.content), "The email field is empty!", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 if(password.getText().toString().length() < 5){
-                    Snackbar.make(root, "Password must be at least 5 characters long!", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(findViewById(android.R.id.content), "Password must be at least 5 characters long!", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 if(TextUtils.isEmpty(phone.getText().toString())){
-                    Snackbar.make(root, "The phone field is empty!", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(findViewById(android.R.id.content), "The phone field is empty!", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 if(TextUtils.isEmpty(name.getText().toString())){
-                    Snackbar.make(root, "The name field is empty!", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(findViewById(android.R.id.content), "The name field is empty!", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
 
