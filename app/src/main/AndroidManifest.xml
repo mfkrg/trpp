@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trpp">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Congrats"
             android:exported="false" />
         <activity
@@ -19,7 +22,7 @@
             android:name=".Profile"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Auth"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

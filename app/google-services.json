@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "296114669637",
-    "project_id": "trpp-65dfc",
-    "storage_bucket": "trpp-65dfc.appspot.com"
+    "project_number": "765321812252",
+    "project_id": "mfkrgtrpp",
+    "storage_bucket": "mfkrgtrpp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:296114669637:android:8572b120fbb6dcb8f0fb2c",
+        "mobilesdk_app_id": "1:765321812252:android:499153d5e13ee4126b42d9",
         "android_client_info": {
           "package_name": "com.mfkrg.trpp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "296114669637-5ps104nogk6cnms9cr9h5ov8sei6q5lb.apps.googleusercontent.com",
+          "client_id": "765321812252-hd65e00r64tvrbvf6d92or71m39tdj71.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.mfkrg.trpp",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "296114669637-gh74ed4ikig25c10b4ro26mvtggcuqo5.apps.googleusercontent.com",
+          "client_id": "765321812252-usmt7fdsfk5825l7r9f7502vqfnl3g4g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAXKg9MB-DyXxoiubZxLaG-37C9K5_19Rw"
+          "current_key": "AIzaSyDwjhK9md08Q9X4D8j2Zk23e2mbUZVL8jw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "296114669637-gh74ed4ikig25c10b4ro26mvtggcuqo5.apps.googleusercontent.com",
+              "client_id": "765321812252-usmt7fdsfk5825l7r9f7502vqfnl3g4g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
