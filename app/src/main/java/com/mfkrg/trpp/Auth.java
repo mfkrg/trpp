@@ -162,7 +162,23 @@ public class Auth extends AppCompatActivity{
                     return;
                 }
 
-                auth.createUserWithEmailAndPassword(email.getText().toString(),password.getText().toString())
+                auth.createUserWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                    @Override
+                    public void onSuccess(AuthResult authResult) {
+                        User user = new User();
+                        user.setPhone(phone.getText().toString());
+                        user.setName(name.getText().toString());
+                        user.setPassword(password.getText().toString());
+                        user.setEmail(email.getText().toString());
+
+                        users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+                                Snackbar.make(root, "registrated!", Snackbar.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                });
 
             }
         });

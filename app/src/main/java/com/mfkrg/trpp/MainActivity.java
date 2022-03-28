@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton toOrdersFromCatalogButton;
     ImageButton toProfileFromCatalogButton;
 
+
     @Override
     public void onClick(View v){
         switch (v.getId()){

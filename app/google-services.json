@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "765321812252",
-    "project_id": "mfkrgtrpp",
-    "storage_bucket": "mfkrgtrpp.appspot.com"
+    "project_number": "209262098477",
+    "project_id": "mfkrg1",
+    "storage_bucket": "mfkrg1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:765321812252:android:499153d5e13ee4126b42d9",
+        "mobilesdk_app_id": "1:209262098477:android:6633eab312f4128cc4a0a4",
         "android_client_info": {
           "package_name": "com.mfkrg.trpp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "765321812252-hd65e00r64tvrbvf6d92or71m39tdj71.apps.googleusercontent.com",
+          "client_id": "209262098477-dgav7hi1k2sa8jtkfie7jhqciu5713qa.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.mfkrg.trpp",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "765321812252-usmt7fdsfk5825l7r9f7502vqfnl3g4g.apps.googleusercontent.com",
+          "client_id": "209262098477-iieqn2gv3at0cc7u4bf9o4h9c2d0hv3h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDwjhK9md08Q9X4D8j2Zk23e2mbUZVL8jw"
+          "current_key": "AIzaSyAu5KKYudnHWucNrWODzC01Tc_LjpcL0pQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "765321812252-usmt7fdsfk5825l7r9f7502vqfnl3g4g.apps.googleusercontent.com",
+              "client_id": "209262098477-iieqn2gv3at0cc7u4bf9o4h9c2d0hv3h.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
