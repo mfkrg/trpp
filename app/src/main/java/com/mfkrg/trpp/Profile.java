@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserInfo;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.FirebaseDatabase;
 import com.mfkrg.trpp.Models.User;
 
@@ -56,6 +58,8 @@ public class Profile extends AppCompatActivity implements View.OnClickListener{
         exitFromProfile.setOnClickListener(this);
 
         TextView userName = findViewById(R.id.textView5);
+        String emailUser = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+        userName.setText("Welcome, " + emailUser);
     }
 
 }
