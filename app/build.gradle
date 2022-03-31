@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId "com.mfkrg.trpp"
-        minSdk 28
-        targetSdk 32
+        minSdk 20
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 

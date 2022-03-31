@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.mfkrg.trpp.Models.User;
@@ -50,6 +51,8 @@ public class Auth extends AppCompatActivity{
         db = FirebaseDatabase.getInstance();
         users = db.getReference("Users");
 
+
+
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +72,10 @@ public class Auth extends AppCompatActivity{
     }
 
     private void showSignInWindow(){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            startActivity(new Intent(Auth.this, MainActivity.class));
+        } else {
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle("Sign In");
@@ -108,8 +115,7 @@ public class Auth extends AppCompatActivity{
                         }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-
-                        Snackbar.make(root, "Error! " + e.getMessage(), Snackbar.LENGTH_SHORT).show();
+                        Snackbar.make(findViewById(android.R.id.content), "Wrong password! " + e.getMessage(), Snackbar.LENGTH_SHORT).show();
 
                     }
                 });
@@ -118,7 +124,7 @@ public class Auth extends AppCompatActivity{
 
         dialog.show();
 
-    }
+    } }
 
     private void showRegistrationWindow() {
 
