@@ -9,27 +9,49 @@
 
     <Button
         android:id="@+id/buttonSignUp"
-        android:layout_width="142dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/purplebottombutton"
+        android:layout_width="166dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/gilroy_semibold"
-        android:text="SIGN UP"
+        android:text="Register"
         android:textSize="20dp"
+        app:backgroundTint="#1C1C1E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
 
     <Button
         android:id="@+id/buttonSignIn"
-        android:layout_width="142dp"
-        android:layout_height="73dp"
-        android:backgroundTint="@color/purplebottombutton"
+        android:layout_width="160dp"
+        android:layout_height="51dp"
+        android:background="@drawable/purplekruglie"
         android:fontFamily="@font/gilroy_semibold"
-        android:text="Sign in"
+        android:text="Login"
         android:textSize="20dp"
+        app:backgroundTint="#9795FD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_welcome_login" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_autors" />
 </androidx.constraintlayout.widget.ConstraintLayout>
