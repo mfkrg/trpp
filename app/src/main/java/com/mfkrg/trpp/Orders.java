@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListView;
+
+import com.mfkrg.trpp.model.Order;
 
 public class Orders extends AppCompatActivity implements View.OnClickListener {
 
@@ -38,5 +41,10 @@ public class Orders extends AppCompatActivity implements View.OnClickListener {
         returnFromOrdersToCatalog.setOnClickListener(this);
         placeyourorder = (ImageButton) findViewById(R.id.placeyourorder);
         placeyourorder.setOnClickListener(this);
+
+        ListView goods_list = findViewById(R.id.goods_list);
+
+        //goods_list.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Order.goods_id.toArray()));
+        goods_list.setAdapter(new ArrayAdapter<>(this, R.layout.text_color_layout, Order.goods_id.toArray()));
     }
 }

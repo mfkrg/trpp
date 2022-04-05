@@ -66,6 +66,7 @@ public class goodsAdapter extends RecyclerView.Adapter<goodsAdapter.GoodsViewHol
                 intentToGoodsPage.putExtra("goodsTitle", GoodsList.get(position).getName());
                 intentToGoodsPage.putExtra("goodsCost", GoodsList.get(position).getCost());
                 intentToGoodsPage.putExtra("goodsText", GoodsList.get(position).getText());
+                intentToGoodsPage.putExtra("goodsId", GoodsList.get(position).getId());
 
                 context.startActivity(intentToGoodsPage, options.toBundle());
             }

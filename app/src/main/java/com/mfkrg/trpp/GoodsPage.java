@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.mfkrg.trpp.model.Order;
 
 import org.w3c.dom.Text;
 
@@ -25,5 +29,13 @@ public class GoodsPage extends AppCompatActivity {
         goodsPageTitle.setText(getIntent().getStringExtra("goodsTitle"));
         goodsPageCost.setText(getIntent().getStringExtra("goodsCost"));
         goodsPageText.setText(getIntent().getStringExtra("goodsText"));
+
     }
+
+    public void addToTheCart(View v){
+        String good_id = getIntent().getStringExtra("goodsTitle");
+        Order.goods_id.add(good_id);
+        Toast.makeText(this, "Added!", Toast.LENGTH_LONG).show();
+    }
+
 }
