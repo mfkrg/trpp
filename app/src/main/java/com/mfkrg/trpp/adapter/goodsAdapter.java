@@ -1,7 +1,11 @@
 package com.mfkrg.trpp.adapter;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +16,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mfkrg.trpp.GoodsPage;
 import com.mfkrg.trpp.R;
 import com.mfkrg.trpp.model.goods;
 
@@ -44,6 +49,27 @@ public class goodsAdapter extends RecyclerView.Adapter<goodsAdapter.GoodsViewHol
 
         holder.goodsTitle.setText(GoodsList.get(position).getName());
         holder.goodsCost.setText(GoodsList.get(position).getCost());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentToGoodsPage = new Intent(context, GoodsPage.class);
+
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) context,
+                        new Pair<View, String>(holder.goodsImage, "goodsImageAnim"), new Pair<View, String>(holder.goodsTitle, "TitleAnim"),
+                        new Pair<View, String>(holder.goodsCost, "CostAnim"));
+
+
+
+                intentToGoodsPage.putExtra("goodsBg", Color.parseColor(GoodsList.get(position).getColor()));
+                intentToGoodsPage.putExtra("goodsImage", imageId);
+                intentToGoodsPage.putExtra("goodsTitle", GoodsList.get(position).getName());
+                intentToGoodsPage.putExtra("goodsCost", GoodsList.get(position).getCost());
+                intentToGoodsPage.putExtra("goodsText", GoodsList.get(position).getText());
+
+                context.startActivity(intentToGoodsPage, options.toBundle());
+            }
+        });
 
     }
 

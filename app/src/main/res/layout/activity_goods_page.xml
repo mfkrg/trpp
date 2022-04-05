@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/goodsPageBg"
     android:background="@color/blackbackgroud"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:background="@drawable/kruglye_ugli"
@@ -31,56 +33,72 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="70dp"
-            android:textColor="@color/black"
             android:fontFamily="@font/gilroy_semibold"
+            android:text="Cost:"
+            android:textColor="@color/black"
             android:textSize="20dp"
-            android:text="Shipping:"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginBottom="70dp"
-            android:fontFamily="@font/gilroy_semibold"
-            android:text="Returns:"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView13" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="35dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
             android:backgroundTint="@color/black"
-            android:text="Button"
+            android:text="Add to cart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/goodsPageCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="TEXT"
+            android:textColor="@color/black"
+            android:transitionName="CostAnim"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cost" />
+
+        <TextView
+            android:id="@+id/goodsPageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="378dp"
+
+        android:id="@+id/goodsPageImage"
+        android:layout_width="0dp"
         android:layout_height="251dp"
         android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
         android:scaleType="centerCrop"
+        android:transitionName="goodsImageAnim"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_java" />
+        app:srcCompat="@drawable/ic_java"/>
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/goodsPageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -89,6 +107,7 @@
         android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="32dp"
+        android:transitionName="TitleAnim"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

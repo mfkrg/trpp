@@ -3,13 +3,14 @@ plugins {
 }
 
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdk 32
 
     defaultConfig {
         applicationId "com.mfkrg.trpp"
-        minSdk 20
+        minSdk 21
         targetSdk 30
         versionCode 1
         versionName "1.0"
@@ -48,5 +49,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:20.0.4'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+}
+repositories {
+    mavenCentral()
 }

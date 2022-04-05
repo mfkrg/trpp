@@ -48,10 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         List<goods> GoodsList = new ArrayList<>();
-        GoodsList.add(new goods(1,"Custom case #1", "399 $", "java", "#00000040"));
-        GoodsList.add(new goods(2,"Custom case #2", "499 $","java", "#00000040"));
-        GoodsList.add(new goods(3,"Custom case #3", "189 $","java", "#00000040"));
-        GoodsList.add(new goods(4,"Custom case #4", "349 $","java", "#00000040"));
+        GoodsList.add(new goods(1,"mfkrg case", "499 $", "java", "#00000040", "made by mfkrg"));
+        GoodsList.add(new goods(2,"payne3105 case", "499 $","java", "#00000040", "made by payne3105"));
+        GoodsList.add(new goods(3,"Glad Valakas case", "189 $","java", "#00000040", "made by Universal"));
+        GoodsList.add(new goods(4,"Putin case", "349 $","java", "#00000040", "made by Kanye West"));
 
         setGoodsRecycler(GoodsList);
 

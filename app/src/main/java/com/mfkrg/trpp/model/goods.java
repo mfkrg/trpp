@@ -3,14 +3,23 @@ package com.mfkrg.trpp.model;
 public class goods {
 
     int id;
-    String name, cost, img, color;
+    String name, cost, img, color, text;
 
-    public goods(int id, String name, String cost, String img, String color) {
+    public goods(int id, String name, String cost, String img, String color, String text) {
         this.id = id;
         this.name = name;
         this.cost = cost;
         this.img = img;
         this.color = color;
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public int getId() {

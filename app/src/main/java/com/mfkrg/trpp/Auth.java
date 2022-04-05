@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
@@ -50,8 +49,6 @@ public class Auth extends AppCompatActivity{
         auth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance();
         users = db.getReference("Users");
-
-
 
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -179,7 +176,7 @@ public class Auth extends AppCompatActivity{
                         users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Snackbar.make(findViewById(android.R.id.content), "registred!", Snackbar.LENGTH_SHORT).show();
+                                Snackbar.make(findViewById(android.R.id.content), "Success!", Snackbar.LENGTH_SHORT).show();
                             }
                         });
                     }

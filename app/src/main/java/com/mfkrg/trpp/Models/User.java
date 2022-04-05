@@ -1,7 +1,7 @@
 package com.mfkrg.trpp.Models;
 
 public class User {
-    private String name, email, password, phone, DisplayName;
+    private String name, email, password, phone;
 
     public User(){}
 
@@ -10,7 +10,6 @@ public class User {
         this.email = email;
         this.password = password;
         this.phone = phone;
-        this.DisplayName = DisplayName;
     }
 
     public String getName() {
@@ -20,15 +19,6 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getDisplayName() {
-        return name;
-    }
-
-    public void setDisplayName(String name) {
-        this.name = name;
-    }
-
 
     public String getEmail() {
         return email;
