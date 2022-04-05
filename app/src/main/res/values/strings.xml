@@ -11,4 +11,7 @@
     <string name="hello">Hello, Gerasimov Zahar!</string>
     <string name="my_orders">My Orders:</string>
     <string name="addtocart">Add to cart</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="addToCartGoodsPage">Add to cart</string>
 </resources>
