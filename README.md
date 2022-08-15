@@ -3,9 +3,9 @@
 
 
 Project was developed by:
-- Gerasimov Zahar
-- Elizaveta Tselykh
-- Larionov Anton
+- Gerasimov Zahar - developer
+- Elizaveta Tselykh - teammate
+- Larionov Anton - designer
 
 Project was made on ****Java**** in ****Android Studio****.
 
